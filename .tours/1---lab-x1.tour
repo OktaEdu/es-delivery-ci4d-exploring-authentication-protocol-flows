@@ -1,5 +1,14 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab X.1 Put Lab Title Here",
-  "steps": []
+  "title": "#1 - Lab 3.1 Configure",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": ""
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": ""
+    }
+  ]
 }
