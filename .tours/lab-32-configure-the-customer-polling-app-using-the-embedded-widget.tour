@@ -1,0 +1,37 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#2 - Lab 3.2 Configure the Customer Polling App Using the Embedded Sign-In Widget",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 3.2: Configure the Customer Polling App Using the Embedded Sign-In Widget\n\n🎯 Objective: Create an an Okta application integration and deploy authentication using the embedded Sign-In Widget.\n\n⏱️ Duration: 15 min"
+    },
+    {
+      "title": "Enable Cross-Origin Resource Sharing (CORS)",
+      "description": "## Enable Cross-Origin Resource Sharing (CORS)\n\nIn Okta, **CORS** allows JavaScript hosted on your website to make a request using an\n`XMLHttpRequest` to the Okta API. Every website origin must be explicitly permitted as a **Trusted Origin** in your Okta org. \n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, navigate to `Security` > `API`\n\n3. Click on the `Trusted Origins`  tab.\n\n4. Click the `Add Origin` button\n\n5. Enter `Okta Ice Portal` into the **Origin name** field.\n\n6. Enter `http://localhost:8080` into the **Origin URL** field.\n\n7. Under **Choose Type**, select `Cross-Origin Resource Sharing (CORS)` \n\n6. Click `Save`"
+    },
+    {
+      "title": "Create an Application Integration for the Polling App",
+      "description": "The Polling app is an existing application in this project. We're going to set up an integration in Okta so our customers can access this application. \n\n1. In the Admin menu, navigate to `Applications` > `Applications`\n\n2. Click `Create App Integration`\n\n3. Select the `OIDC - OpenID Connect` radio button.\n\n4. Select the `Single-Page Application` radio button.\n\n5. Name this application `Customer Polling`\n\n6. Under **Grant Type** select both `Authorization Code` and `Interaction Code`. \n\n7. In the **Sign-in redirect URIs** field, enter `http://localhost:8080/embedded/polling.html`\n\n8. Under **Assignments** click the radio button option for `Limit access to select groups`\n\n9. Type in and select `Customers`\n\n10. Click `Save`"
+    },
+    {
+      "file": "embedded/polling.html",
+      "description": "## Configure the Polling Application `appClientID`\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
+      "line": 28
+    },
+    {
+      "file": "embedded/polling.html",
+      "description": "## Configure the Polling Application `baseOktaURL`\n\n1. Change the `baseOktaURL` to match your assigned Okta org URL.\n\n2. Click here to `Save` your `polling.html` file.",
+      "line": 27
+    },
+    {
+      "file": "embedded/polling.html",
+      "description": "## Import the Okta Sign-In Widget Library\n\nWe're going to import Okta's Sign In Widget JavaScript and CSS library from a CDN (Content Delivery Network) by adding the followng two lines to the `<head>` section of the Customer Polling app:\n\n```html\n<script src=\"https://global.oktacdn.com/okta-signin-widget/5.8.3/js/okta-sign-in.min.js\" type=\"text/javascript\"></script>\n<link href=\"https://global.oktacdn.com/okta-signin-widget/5.8.3/css/okta-sign-in.min.css\" type=\"text/css\" rel=\"stylesheet\"/>\n```\n\nYou can click the **Insert Code** link above to insert these lines into the Polling app.\n\nThe libraries imported here are the same ones used by the Okta-hosted Sign-In Widget that we saw in Module 2.\n\nEmbedding the Sign In Widget directly to a page in your application allows for full customization.",
+      "line": 8
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, you have configured an application using the Embedded Sign-In Widget model of deploying authentication."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#3 - Lab 3.3 Test Web SSO",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "# Lab 3.3 Test Web SSO\n\n🎯 Objective: Now that we have deployed authentication on two applications assigned to the Customers group, we can test out web SSO.\n\n⏱️ Duration: 10 min"
+    },
+    {
+      "title": "Log Out of Okta",
+      "description": "## Log out of Okta\n\nIf you are still logged in on your Okta org, log out."
+    },
+    {
+      "title": "Start the Web Server",
+      "description": "## Start the Web Server\n\n1. Open a new terminal in VSCode \n\n2. Notice that the terminal automatically opens to the project directory.\n\n3. Issue the command `python -m http.server 8080`"
+    },
+    {
+      "title": "Test the Polling App",
+      "description": "## Test the Polling App\n\n1. In Chrome, visit http://localhost:8080\n\n2. Click the `Polling App (Embedded Widget)` link. \n\n3. Notice that you are not redirected to Okta for authentication. Instead, the Sign-In Widget loads on the page of your website.\n\n4. Log in as `soraya.esfeh@oktaice.com`/`Tra!nme4321`\n\nYou should now see the ID Token (which is formatted as a JSON web token or **JWT**) value and its claims, including:\n\n- `sub` (subject of the JWT): Soraya's Okta UserId\n- `name`: Soraya's name\n- `email`: Soray's email address\n- `ver`: Okta API version\n- `iss` (issuer of the JWT): The URL of your Okta Authorization server\n- `aud` (audience): Your app's Client Id\n- `iat` (issued at time): Time the JWT was issued. Expressed in Unix time.\n- `exp` (expiration time): Time the JWT expires. Expressed in Unix time.\n- `jti` (JWT ID): Unique identifier used to prevent the JWT from being replayed"
+    },
+    {
+      "title": "Test the Rewards App",
+      "description": "## Test the Rewards App\n\n1. Click on `Return to Portal`\n\n2. Click the `Rewards App (Redirect)` link.\n\n3. Notice that you are not prompted to authenticate again as you have an existing session, so an ID Token is issued.\n\nYou should see the ID Token value and its claims. Much of this content is the same as you saw on the Polling App. However, notice that the `jti` (JWT ID) and the `aud` (audience) are different. You should now see that the `aud` is this Client ID of the Rewards app."
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, you seen how web SSO works between two applications accessible to members of the Customer group."
+    }
+  ]
+}
