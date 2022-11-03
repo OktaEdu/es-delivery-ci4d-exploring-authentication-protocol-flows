@@ -8,7 +8,7 @@
     },
     {
       "title": "Copy Redirect Applications",
-      "description": "## Copy Redirect Applications \n\nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../es-delivery-ci4d-introducing-okta/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
+      "description": "## Copy Redirect Applications \n\nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../01-introducing-okta/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
     },
     {
       "title": "Lab Checkpoint",
