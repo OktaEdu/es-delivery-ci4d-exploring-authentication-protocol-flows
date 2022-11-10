@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab 3.1 Configure",
+  "title": "#1 - Lab 3.1 Project Set Up",
   "steps": [
     {
       "title": "Lab Overview",
@@ -12,7 +12,7 @@
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, you have copies of the apps you configured in **Lab 1.4**. This will be necessary to see how SSO works as we configure additional applications in the portal."
+      "description": "## ✅ Checkpoint\n\nAt this point, you have copies of the apps you configured in `Lab 1.4` in the current workspace. This will be necessary to see how SSO works as we configure additional applications in the portal."
     }
   ]
 }
