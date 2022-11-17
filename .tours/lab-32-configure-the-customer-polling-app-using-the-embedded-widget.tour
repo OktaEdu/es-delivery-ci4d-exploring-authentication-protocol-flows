@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#2 - Lab 3.2 Configure the Customer Polling App Using the Embedded Sign-In Widget",
+  "title": "#2 - Lab 3.2 Deploy Authentication with the Embedded Sign In Widget",
   "steps": [
     {
       "title": "Lab Overview",

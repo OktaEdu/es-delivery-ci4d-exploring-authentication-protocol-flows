@@ -4,10 +4,10 @@
 
 This repo contains everything you need to complete the labs in this module:
 
-- Lab 3-1: 
-- Lab 3-2: 
-- Lab 3-3: 
-- Lab 3-4: 
+- Lab 3.1: Project Set Up
+- Lab 3.2: Deploy Authentication with the Embedded Sign In Widget
+- Lab 3.3: Test Web SSO
+
 
 ## How to Start the Labs
 
