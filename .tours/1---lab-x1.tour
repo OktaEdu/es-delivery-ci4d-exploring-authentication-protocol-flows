@@ -1,10 +1,10 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab 3.1 Project Set Up",
+  "title": "#1 - Lab 3.1 Project Setup",
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 3.1: Project Set Up\n\n🎯 Objective: In order to have working copies of our previously configured redirect apps in our portal, we'll need to copy them to this workspace This will be necessary to see how SSO works as we configure additional applications in the portal.\n\n⏱️ Duration: 1 min\n\n⚠️ Prerequisite: Lab 1.4"
+      "description": "## Lab 3.1: Project Setup\n\n🎯 Objective: In order to have working copies of our previously configured redirect apps in our portal, we'll need to copy them to this workspace This will be necessary to see how SSO works as we configure additional applications in the portal.\n\n⏱️ Duration: 1 min\n\n⚠️ Prerequisite: Lab 1.4"
     },
     {
       "title": "Copy Redirect Applications",
