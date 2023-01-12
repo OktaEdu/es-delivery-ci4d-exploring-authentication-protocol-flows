@@ -20,7 +20,7 @@
     },
     {
       "file": "embedded/polling.html",
-      "description": "## Configure the Polling Application `baseOktaURL`\n\n1. Update the value of `baseOktaURL` to match your assigned Okta org URL. Recall that you can access this URL from the `Link` section of the **Credentials** panel in your VM.\n\n2. [Click here to `Save`](command:workbench.action.files.save) your `polling.html` file.",
+      "description": "## Configure the Polling Application `baseOktaURL`\n\n1. Update the value of `baseOktaURL` to match your **custom URL** (e.g., `oktaice########.coffee-ice.com`). You can use the **Credentials** panel in your VM to get the **Subdomain** of this URL. \n\n2. [Click here to `Save`](command:workbench.action.files.save) your `polling.html` file.",
       "line": 27
     },
     {
