@@ -1,10 +1,14 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#3 - Lab 3.3 Test Web SSO",
+  "title": "#2 - Lab 3.2 Test Web SSO",
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 3.3 Test Web SSO\n\n🎯 Objective: Now that we have deployed authentication on two applications assigned to the Customers group, we can test out web SSO.\n\n⏱️ Duration: 10 min"
+      "description": "## Lab 3.2 Test Web SSO\n\n🎯 Objective: Now that we have deployed authentication on two applications assigned to the Customers group, we can test out web SSO.\n\n⏱️ Duration: 10 min\n\n⚠️ Prerequisite: Lab 1.4"
+    },
+    {
+      "title": "Copy Redirect Applications",
+      "description": "## Copy Redirect Applications \n\n In order to have working copies of the apps we previously configured (Redirect Model of deploying authentication) in our portal, we'll need to copy them to this workspace. This will be necessary to see how Web SSO works between our two Customer applications (Rewards and Polling).\n \nClick [here](command:codetour.sendTextToTerminal?[\"mkdir redirect; cp ../02-customizing-okta-hosted-siw/redirect/* redirect\"]) to copy the `redirect` directory to this workspace."
     },
     {
       "title": "Log Out of Okta",
