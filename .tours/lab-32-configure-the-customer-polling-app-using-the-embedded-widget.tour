@@ -16,12 +16,12 @@
     {
       "file": "embedded/polling.html",
       "description": "## Configure the Polling Application `appClientID`\n\n1. Copy the `Client ID` that was displayed after you saved your integration. \n\n2. Paste the `Client ID` into the `appClientID` variable above.",
-      "line": 28
+      "line": 26
     },
     {
       "file": "embedded/polling.html",
       "description": "## Configure the Polling Application `baseOktaURL`\n\n1. Update the value of `baseOktaURL` to match your **custom URL** (e.g., `oktaice########.coffee-ice.com`). You can use the **Credentials** panel in your VM to get the **Subdomain** of this URL. \n\n2. [Click here to `Save`](command:workbench.action.files.save) your `polling.html` file.",
-      "line": 27
+      "line": 25
     },
     {
       "file": "embedded/polling.html",
