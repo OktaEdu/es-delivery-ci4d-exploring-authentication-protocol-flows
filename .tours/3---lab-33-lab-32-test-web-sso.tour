@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 3.2 Test Web SSO\n\n🎯 Objective: Now that we have deployed authentication on two applications assigned to the Customers group, we can test out web SSO.\n\n⏱️ Duration: 10 min\n\n⚠️ Prerequisite: Lab 1.4"
+      "description": "## Lab 3.2 Test Web SSO\n\n🎯 Objective: Now that we have deployed authentication on two applications assigned to the Customers group, we can test out web SSO.\n\n⏱️ Duration: 10 min\n\n⚠️ Prerequisites: Labs 1.4, 2.4, and 3.1"
     },
     {
       "title": "Copy Redirect Applications",

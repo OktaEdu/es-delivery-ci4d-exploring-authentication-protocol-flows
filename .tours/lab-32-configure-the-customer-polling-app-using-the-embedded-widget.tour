@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 3.1: Deploy Authentication with the Embedded Sign In Widget\n\n🎯 Objective: Create an an Okta application integration and deploy authentication using the embedded Sign-In Widget. Use Web SSO between two different applications assigned to a user.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 1.4"
+      "description": "## Lab 3.1: Deploy Authentication with the Embedded Sign In Widget\n\n🎯 Objective: Create an an Okta application integration and deploy authentication using the embedded Sign-In Widget. \n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisites: Labs 1.4 and 2.4"
     },
     {
       "description": "## A Note on Cross-Origin Resource Sharing (CORS)\n\nRecall that we have already enabled CORS for the Okta Ice Portal in Module 1. This is necessary when deploying authentication using the Embedded Widget model. In Okta, **CORS** allows JavaScript hosted on your website to make a request using an\n`XMLHttpRequest` to the Okta API. Every website origin must be explicitly permitted as a **Trusted Origin** in your Okta org. \n"
